@@ -3,7 +3,7 @@ let app=express();
 let port=1995;
 let mongoose=require('mongoose');
 app.use(express.json());
-mongoose.connect('mongodb://localhost:27017/dgn_company').then(()=>{
+mongoose.connect('mongodb+srv://gopinathcs2:12345@cluster0.2v5seyj.mongodb.net/?appName=Cluster0').then(()=>{
 console.log('db connect');
 }).catch((err)=>{
     console.log(err)
